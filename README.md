@@ -1,5 +1,5 @@
 # Find trending gifs and search for thousands of them 
->## Author: [El-rophi Skwaila](https://github.com/Elrophi/Gif-fetch-api)
+>## Author: [El-rophi Skwaila](https://github.com/Elrophi/github-clone)
 ---
 
 >Description
