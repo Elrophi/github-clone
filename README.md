@@ -1,4 +1,4 @@
-# Find trending gifs and search for thousands of them 
+# Search github by username or search for repos
 >## Author: [El-rophi Skwaila](https://github.com/Elrophi/github-clone)
 ---
 
