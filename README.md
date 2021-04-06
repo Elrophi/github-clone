@@ -50,4 +50,4 @@ typescript code sample:
 ---
 
 ### Copyright and License
-[MIT License](https://github.com/Elrophi/Gif-fetch-api/blob/master/LICENSE)  
+[MIT License](https://github.com/Elrophi/github-clone/blob/master/LICENSE)  
