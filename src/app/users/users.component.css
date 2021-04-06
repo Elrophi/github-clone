@@ -1,3 +1,16 @@
 .container{
     margin-top: 5%;
 }
+
+.btn{
+    margin: 2%;
+} 
+
+
+h3 {
+    color: blue;
+}
+
+form {
+    padding: 2%;
+}

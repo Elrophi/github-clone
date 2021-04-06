@@ -1,3 +1,4 @@
+import { ProfileService } from './../service/profile.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repos.component.css']
 })
 export class ReposComponent implements OnInit {
+  repoitems: any[];
+  repoName:string= "akan";
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private profileService: ProfileService) { 
+    
   }
+
+  findRepo () {
+    this.profileService.UpdateRepo(this.repoName);
+    this.profileService.searchrepos().subscribe(repo => {
+      // console.log(repo["items"]);
+      this.repoitems = repo["items"];
+      console.log(this.repoitems);
+    })
+  }
+
+  ngOnInit() {
+    this.findRepo()
+  }
+
 
 }

@@ -1,5 +1,5 @@
+import { ProfileService } from './../service/profile.service';
 import { Component, OnInit } from '@angular/core';
-
 
 
 @Component({
@@ -9,14 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
   
-  public gitHubUserQuery!: string;
-  constructor() { }
+  user: any;
+  userRepos:any;
+  username: string = 'Elrophi'
+  imageWidth: number = 150;
+  imageHeight: number = 200;
 
-  public searchUser(){
-
+  constructor(private profileService: ProfileService) { 
+    
   }
 
-  ngOnInit(): void {
+  findUser () {
+    this.profileService.UpdateUser(this.username);
+
+    this.profileService.getUser().subscribe(user => {
+      console.log(user);
+      this.user = user;
+    });
+
+    this.profileService.getUserRepos().subscribe(repos => {
+      console.log(repos);
+      this.userRepos = repos;
+    })
+  }
+
+  ngOnInit() {
+    this.findUser()
   }
 
 }
