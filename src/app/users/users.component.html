@@ -1,12 +1,29 @@
-<form>
-    <div class="form-group">
-        <label>SEARCH BY:</label>
-        <input type="text" name="search" [(ngModel)]='username' (keyup)="findUser()">
+<br>
+<div class="container search-box">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h3>Github User Search</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="search" [(ngModel)]='username' (keyup)="findUser()">
+                            <label for="search" class="ml-3">Searching.....</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-</form>
+</div>
+<hr>
+<br>
+
 <div *ngIf="user" class="container">
     <div class="card bg-light">
-        <div class="card-header">
+        <div class="card-header bg-success text-white">
             Username: {{user.login}}
         </div>
 
@@ -42,7 +59,8 @@
             </div>
         </div>
     </div>
-
+<hr>
+<br>
     <div class="card bg-light" *ngIf="user.public_repos">
         <div class="card-header">
             <h2>Repos</h2>

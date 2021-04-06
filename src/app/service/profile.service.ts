@@ -1,8 +1,7 @@
 import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import {catchError, retry} from 'rxjs/operators';
+
 
 
 
@@ -12,9 +11,10 @@ import {catchError, retry} from 'rxjs/operators';
 export class ProfileService {
   username: string;
   repoName: string;
-  clientId: string = "0da956e6044b7adf54fe";
-  clientSecret: string = "d0cb2b52be3cb8c1e9e9df4cd62fa68bc3e77902";
-  apikey:string='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';
+  clientId: string = "c789323b20a2d31dc9fa";
+  clientSecret: string = "83e428e5ed1c99fded8ab02686753f74656f9f6b";
+  apikey:string='be05ad82ef1dec303061648a172836e81613bc78';
+
   constructor(private http: HttpClient) { 
     console.log('service is now ready');
   }
