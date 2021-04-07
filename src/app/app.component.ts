@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'github';
+
+  public isButtonClicked = true;
+
+  public isVisible = true;
 }

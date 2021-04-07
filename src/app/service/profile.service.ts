@@ -11,9 +11,12 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 export class ProfileService {
   username: string;
   repoName: string;
+  // clientId: string = 'cb7dede218288dcf36a3'
   clientId: string = "c789323b20a2d31dc9fa";
   clientSecret: string = "83e428e5ed1c99fded8ab02686753f74656f9f6b";
-  apikey:string='be05ad82ef1dec303061648a172836e81613bc78';
+  // clientSecret: string = 'ad192e044ae87fd23a0d36f9309c3aa874f411d5'
+  // apikey:string='be05ad82ef1dec303061648a172836e81613bc78';
+  apikey:string='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';
 
   constructor(private http: HttpClient) { 
     console.log('service is now ready');

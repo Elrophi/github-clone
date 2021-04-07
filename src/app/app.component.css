@@ -2,3 +2,20 @@
     padding:2px;
     margin-left: 7px;
 }
+
+#top{
+    margin-top: 2%;
+    border: 5px solid green;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+.top{
+    background: url('../assets/Bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100%; */
+
+}
