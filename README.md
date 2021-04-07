@@ -2,6 +2,8 @@
 >## Author: [El-rophi Skwaila](https://github.com/Elrophi/github-clone)
 ---
 
+![Welcome Page]()
+
 >Description
 ### This is a project that teaches us how to use a rest api to search github users by username or search repos
 ---
