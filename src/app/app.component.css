@@ -5,7 +5,7 @@
 
 #top{
     margin-top: 2%;
-    border: 5px solid green;
+    border: 5px solid rgb(62, 163, 62);
     border-radius: 20px;
     padding: 20px;
     width: 500px;
@@ -16,6 +16,4 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* min-height: 100%; */
-
 }
